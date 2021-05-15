@@ -42,7 +42,7 @@ function setup() {
     plinkos.push(new Plinko(j,375));
   }
 
-  //create particle objects
+
 
     
 }
@@ -54,7 +54,8 @@ var divisions = []
 function draw() {
   background("black");
   textSize(20)
- 
+  
+ //create particle objects
   if(frameCount%90===0){ 
     particles.push(new Particle(random(width/2-10, width/2+10), 10, 16))
   }
